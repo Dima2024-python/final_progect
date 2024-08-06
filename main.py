@@ -4,6 +4,6 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get('/')
+@app.get("/")
 def index() -> dict:
-    return {'status': '200'}
+    return {"status": "200"}
