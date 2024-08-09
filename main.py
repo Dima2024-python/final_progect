@@ -11,9 +11,6 @@ def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 
-
-
-
 @app.get("/")
 def index() -> dict:
     return {"status": "200"}
