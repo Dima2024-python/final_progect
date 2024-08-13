@@ -1,10 +1,4 @@
-from datetime import datetime
-
-from fastapi import FastAPI, Path, HTTPException
-from pydantic import BaseModel, Field, HttpUrl
-from starlette import status
-
-import dao
+from fastapi import FastAPI
 from api.travels import api_router
 from database import create_tables
 from web.web_travels import web_router

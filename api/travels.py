@@ -1,11 +1,10 @@
 from datetime import datetime
 
-from fastapi import FastAPI, Path, HTTPException, APIRouter
+from fastapi import Path, HTTPException, APIRouter
 from pydantic import BaseModel, Field, HttpUrl
 from starlette import status
 
 import dao
-from database import create_tables
 
 
 api_router = APIRouter(prefix='/api')

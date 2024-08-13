@@ -10,6 +10,7 @@ web_router = APIRouter(
     prefix="",
 )
 
+
 @web_router.get('/')
 def index(request: Request):
     context = {
